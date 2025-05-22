@@ -1,0 +1,121 @@
+/* Sidebar styling */
+.custom-sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    position: fixed;
+    height: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
+/* Sidebar when hidden */
+.custom-sidebar.hidden {
+    transform: translateX(-260px);
+}
+
+.custom-sidebar .logo {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.custom-sidebar .logo img {
+    max-width: 80%;
+}
+
+.custom-sidebar .menu-title {
+    font-size: 16px;
+    color: #555;
+    margin: 15px;
+}
+
+.custom-sidebar .menu-item {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px 15px;
+    transition: background-color 0.3s;
+}
+
+.custom-sidebar .menu-item:hover,
+.custom-sidebar .menu-item.active {
+    background-color: #28BB8E;
+    color: #fff;
+}
+
+.custom-sidebar .menu-item i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Content styling */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Content when sidebar is hidden */
+.content.sidebar-hidden {
+    margin-left: 0;
+}
+
+.icon {
+    width: 30px;
+}
+
+/* General styling for menu items */
+.menu-item {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Icon Size */
+img.menu-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
+/* word animation */
+.scrolling-text {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 30px 0;
+}
+
+.scrolling-text span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollText 10s linear infinite;
+    font-size: 30px;
+    color: #c7c97b;
+    font-weight: bold;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
