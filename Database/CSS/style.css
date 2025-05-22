@@ -98,16 +98,15 @@ img.menu-icon {
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .scrolling-text span {
     display: inline-block;
     padding-left: 100%;
     animation: scrollText 10s linear infinite;
-    font-size: 30px;
+    font-size: 60px;
     color: #c7c97b;
-    font-weight: bold;
 }
 
 @keyframes scrollText {
